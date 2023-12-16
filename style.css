@@ -1,0 +1,72 @@
+*::after, ::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(116, 197, 235);
+    color:rgb(4, 56, 80) ;
+    font-family: sans-serif;
+
+}
+
+.Weather-icon{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.header-left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+    padding: .5rem;
+    border-right: 2px solid rgb(4, 56, 80) ;
+}
+
+
+.Weather-icon, .large{
+    height: 80px;
+    width: 80px;
+    
+}
+
+.header-current-temp{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+
+
+.header-right{
+    display: grid;
+    width: 50%;
+    justify-content: space-around;
+    gap: 1rem;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    
+}
+
+.info-group{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.label{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .75rem;
+}
+
+.value-sub-info{
+    font-weight: lighter;
+    font-size: .75rem;
+}
