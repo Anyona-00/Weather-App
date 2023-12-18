@@ -36,8 +36,8 @@ body{
 
 
 .Weather-icon, .large{
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     
 }
 
@@ -81,9 +81,10 @@ body{
 .day-section{
     display: grid;
     grid-template-columns: repeat(auto-fit, 75px);
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
     padding: 1rem;
+    margin-top: 4rem;
 
 }
 
@@ -93,11 +94,37 @@ body{
     border: 1px solid rgb(4, 56, 80);
     border-radius: .5rem;
     align-items: center;
-    padding: .25rem;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .day-card-day{
     font-size: .75rem;
     color:rgb(4, 56, 80) ;
     margin-top: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*hour-section*/
+
+.hour-section{
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+    margin-top: 4rem;
+}
+
+.hour-row{
+    background-color:rgb(115, 201, 241) ;
+}
+
+
+.hour-row:nth-child(2n){
+    background-color:rgb(72, 178, 228) ;
+}
+
+.hour-row > td{
+    padding: 0.25rem, .5rem;
 }
