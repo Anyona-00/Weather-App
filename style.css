@@ -16,6 +16,10 @@ body{
     object-fit: contain;
 }
 
+
+
+/*Header*/
+
 .header{
     display: flex;
     align-items: center;
@@ -69,4 +73,31 @@ body{
 .value-sub-info{
     font-weight: lighter;
     font-size: .75rem;
+}
+
+
+/*day-section*/
+
+.day-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 75px);
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.day-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(4, 56, 80);
+    border-radius: .5rem;
+    align-items: center;
+    padding: .25rem;
+}
+
+.day-card-day{
+    font-size: .75rem;
+    color:rgb(4, 56, 80) ;
+    margin-top: .5rem;
 }
