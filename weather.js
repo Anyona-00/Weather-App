@@ -12,5 +12,6 @@ export function getWeather(lat, lon, timezone){
     }}
     )
 
-
 }
+
+console.log(getWeather (10, 10, Intl.DateTimeFormat().resolvedOptions.timeZone))
